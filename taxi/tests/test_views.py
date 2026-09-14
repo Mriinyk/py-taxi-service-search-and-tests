@@ -64,7 +64,10 @@ class SearchViewTests(TestCase):
 
         # Manufacturers search setup
         self.man1 = Manufacturer.objects.create(name="Honda", country="Japan")
-        self.man2 = Manufacturer.objects.create(name="Hyundai", country="South Korea")
+        self.man2 = Manufacturer.objects.create(
+            name="Hyundai",
+            country="South Korea"
+        )
         self.man3 = Manufacturer.objects.create(name="BMW", country="Germany")
 
     def test_car_search_filter(self):
