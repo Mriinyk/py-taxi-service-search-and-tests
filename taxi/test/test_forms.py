@@ -9,8 +9,8 @@ class FormTests(TestCase):
             "first_name": "John",
             "last_name": "Doe",
             "license_number": "AAA12345",
-            "password1": "password123",
-            "password2": "password123",
+            "password1": "ComplexP@ssw0rd123",
+            "password2": "ComplexP@ssw0rd123",
         }
 
         form = DriverCreationForm(data=valid_data)
