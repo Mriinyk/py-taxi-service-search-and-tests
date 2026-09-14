@@ -68,7 +68,10 @@ class SearchViewTests(TestCase):
             name="Hyundai",
             country="South Korea"
         )
-        self.man3 = Manufacturer.objects.create(name="BMW", country="Germany")
+        self.man3 = Manufacturer.objects.create(
+            name="BMW",
+            country="Germany"
+        )
 
     def test_car_search_filter(self):
         url = reverse("taxi:car-list") + "?model=toyota"
